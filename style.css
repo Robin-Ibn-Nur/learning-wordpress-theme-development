@@ -1,0 +1,19 @@
+/*
+Theme Name: Vélora
+Theme URI: https://github.com/Robin-Ibn-Nur/learning-wordpress-theme-development
+Author: Robin Ibn Nur
+Author URI: https://github.com/Robin-Ibn-Nur
+Description: Timeless Elegance luxury fashion homepage and e-commerce WordPress theme with native dashboard customization.
+Version: 1.0.0
+Requires at least: 6.2
+Tested up to: 6.7
+Requires PHP: 8.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: robin
+*/
+
+/*
+Styles are compiled with Vite and Tailwind CSS from `src/main.css`.
+Run `npm run dev` for development or `npm run build` for production.
+*/

@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  --color-velora-gold: #c5a880;
+  --color-velora-gold-dark: #a98b64;
+  --color-velora-gold-light: #dfc8a7;
+  --color-velora-black: #0c0c0c;
+  --color-velora-charcoal: #171717;
+  --color-velora-cream: #faf9f5;
+  --color-velora-sand: #f6f4ee;
+  --color-velora-border: #e8e6df;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: #171717;
+    font-family: var(--font-sans);
+    letter-spacing: -0.01em;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-serif-luxury {
+    font-family: var(--font-serif);
+    letter-spacing: -0.01em;
+  }
+
+  /* Micro luxury uppercase tag */
+  .font-luxury-tag {
+    font-family: var(--font-sans);
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+  }
+
+  /* Button luxury arrow animation */
+  .btn-luxury:hover .btn-arrow {
+    transform: translateX(4px);
+  }
+  .btn-arrow {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  /* Typography for classic pages */
+  .entry-content {
+    line-height: 1.8;
+    color: #374151;
+  }
+  .entry-content h1, .entry-content h2, .entry-content h3 {
+    font-family: var(--font-serif);
+    color: #0c0c0c;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f6f4ee;
+}
+::-webkit-scrollbar-thumb {
+  background: #c5a880;
+  border-radius: 3px;
+}
